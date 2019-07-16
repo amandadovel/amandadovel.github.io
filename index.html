@@ -1,63 +1,317 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!-- Reset -->
+    <link rel="stylesheet" href="assets/reset.css">
+
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Teko:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Anton|PT+Serif" rel="stylesheet">
+
 
 </head>
 
 <body>
 
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Amanda Dovel</h1>
+        </div>
+
+        <!-- navbar -->
+        <div class="nav-wrapper">
+            <ul id="nav-links">
+                <li><a href="#projects" class="nav-a">Projects</a></li>
+                <br>
+                <li><a href="#about-me" class="nav-a">About Me</a></li>
+                <br>
+                <li><a href="#yoga-logo" class="nav-a">Contact</a></li>
+                <br>
+                <li><a href="RESUME .pdf" class="nav-a">Resume</a></li>
+                <br>
+                <li><a href="#social-media" class="nav-a">Social Media</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Materialize Cards with project links -->
     <div class="container">
-        
-        <div id="links">
 
-            <nav>
-                <a href="index.html">About Me | </a>
-                <a href="contact.html">Contact | </a>
-                <a href="portfolio.html">Portfolio</a>
-            </nav>
+        <div class="carousel section-1" id="projects">
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-mountain.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Giphy/API<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://amandadovel.github.io/giphy/" target="blank">Project link</a></p>
+                        <p><a href="https://github.com/amandadovel/giphy" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Giphy/API Project<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>User can explore and animate different gifs with this site.</p>
+                    </div>
+                </div>
+            </div>
 
-            <div id="header">
-                <header>
-                    <h1>Amanda Dovel</h1>
-                </header>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-crystals.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Crystal Catcher<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://amandadovel.github.io/unit-4-game/" target="blank">Project link</a></p>
+                        <p><a href="https://github.com/amandadovel/unit-4-game" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Crystal Catcher<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>You will be given a random number at the beginning of the game. Each crystal has a hidden
+                            value. By clicking on the crystal you will add to your score. Try not to let your score go
+                            above the initial number!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-plane.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Travel Trivia<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://amandadovel.github.io/TriviaGame/" target="blank">Project link</a></p>
+                        <p><a href="https://github.com/amandadovel/TriviaGame" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Travel Trivia<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>Explore the world from your desktop with this travel trivia game. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-train-hills.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Train Schedule<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://amandadovel.github.io/Firebase_Train/" target="blank">Project link</a></p>
+                        <p><a href="https://github.com/amandadovel/Firebase_Train" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Train Schedule<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>User can dynamically add trains and destinations to this schedule.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-pineapple.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Food Finders<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://matthewshawn.github.io/AmandaKyleJeffMatt/" target="blank">Project link</a>
+                        </p>
+                        <p><a href="https://github.com/MatthewShawn/AmandaKyleJeffMatt" target="blank">GitHub link</a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Food Finders<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>Food Finders aims to reduce waste by connecting companies with excess food to
+                            organizations in need.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-matrix.jpg" id="matrix">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Liri-Bot<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://github.com/amandadovel/Liri-Bot" target="blank">GitHub link</a>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Liri-Bot<i
+                                class="material-icons right">&#10060</i></span>
+                        <p>LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition
+                            Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a
+                            command line node app that takes in parameters and gives you back data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator portal" src="assets/images/Optimized-door.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Hangman<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://amandadovel.github.io/Word-Guess-Game/" target="blank">Project link</a></p>
+                        <p><a href="https://github.com/amandadovel/Word-Guess-Game" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Hangman<i
+                                class="material-icons right">&#10060</i></span>
+                        <p> When page loads press any key to get started and fill in the blanks!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="assets/images/Optimized-bamazon.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Bamazon<i
+                                class="material-icons right"></i></span>
+                        <p><a href="https://github.com/amandadovel/bamazon" target="blank">GitHub link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Bamazon<i
+                                class="material-icons right">&#10060</i></span>
+                        <p> This is an Amazon-like storefront using MYSQL. The app takes in orders from customers and
+                            depletes stock from the store's inventory.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <!-- Color background and text overlay on hover -->
+        <div class="about-me section-2" id="about-me">
+            <div class="overlay-image">
+                <img class="me" src="assets/images/Optimized-ashram.JPG" alt="ashram" id="ashram" />
+                <div class="normal">
+                    <div class="text">
+                        <!--Image + text ORIGINAL-->
+                        <p>World traveler. Yoga teacher. Web Dev in training.</p>
+                    </div>
+                </div>
+
+                <div class="hover">
+                    <div class="text">
+                        <!--Background + text HOVER-->
+                        <p>After completing my degree in Broadcast Production, I have found a new love for
+                            technology and web development. The last four years I have been traveling the world
+                            exploring many countries and different cultures.
+                            I am always looking for ways to improve my skillset and expand my mind. </p>
+                    </div>
+                </div>
 
             </div>
 
+
         </div>
 
-        <section id="aboutme">
 
-            <h2>About Me</h2>
 
-            <img src="assets/images/peace.jpg" height="200px" width="200px" alt="Peace" id="image" />
+        <!-- Contact Section -->
 
-            <p>I graduated from CU Boulder in 2012 with a degree in Broadcast Production. Since then I have been working
-                in bars
-                and restaurants and traveling the world.
-                I bought a one way ticket to Europe in 2014 and came home only twice over four years. Along the way I
-                picked
-                up any job I could to get by and save money. Staying in one place for longer than a couple weeks allows
-                you to
-                really understand
-                the culture and local way of life. In the summer of 2016 I completed my Yoga Teacher Training in
-                Rishikesh,
-                India and taught yoga on the South coast of India for two years
-                after. I am back in Colorado, with my Indian street dog that I rescued, ready to challenge myself and
-                take a new
-                direction in my life!</p>
+        <div class="contact section-3">
 
-        </section>
+            <img src="assets/images/dancingflowerlogo.jpg" alt="yoga-logo" id="yoga-logo">
+            <p> &#8420; &nbsp; &nbsp; 303-726-4247 </p>
+            <p> &#8420; &nbsp; &nbsp; <a href="mailto: amandacdovel@gmail.com">amandacdovel@gmail.com</a></p>
 
+        </div>
+
+        <!-- Social Media Section -->
+
+        <footer class="social-media section-4" id="social-media">
+            <!-- Social Media links -->
+
+            <div class="row social-media-row">
+                <div class="col s2">
+                    <a href="https://github.com/amandadovel" target="_blank">
+                        <img src="assets/images/github-logo.png" alt="github-logo" id="github-logo">
+                    </a>
+                </div>
+                <div class="col s2">
+                    <a href="https://www.facebook.com/amanda.dovel.1" target="_blank">
+                        <img src="assets/images/facebook-logo.png" alt="facebook-logo" id="facebook-logo">
+                    </a>
+                </div>
+                <div class="col s2">
+                    <a href="https://www.instagram.com/doveskii/?hl=en" target="_blank">
+                        <img src="assets/images/instagram-logo.jpg" alt="instagram-logo" id="instagram-logo">
+                    </a>
+                </div>
+
+                <div class="col s2">
+                    <a href="https://www.linkedin.com/in/amanda-dovel-5140b726/" target="_blank">
+                        <img src="assets/images/in-logo.png" alt="linkedin-logo" id="linkedin-logo">
+                    </a>
+                </div>
+
+                <div class="col s2">
+                    <a href="https://open.spotify.com/user/127653461?si=KV_p4L-yQjCPGH4XFE9Qug" target="_blank">
+                        <img src="assets/images/spotify-logo.png" alt="spotify-logo" id="spotify-logo">
+                    </a>
+                </div>
+
+                <div class="col s2">
+                    <a href="https://www.youtube.com/user/doveSkii/videos?view=0&sort=dd&shelf_id=2&view_as=subscriber"
+                        target="_blank">
+                        <img src="assets/images/youtube-logo.png" alt="youtube-logo" id="youtube-logo">
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Javascript -->
+        <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </div>
-
-<footer id="footer"></footer>
-
 </body>
 
 </html>
