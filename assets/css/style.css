@@ -3,13 +3,13 @@ body, html {
 	scroll-behavior: smooth;
 }
 
-.sticky {
+/* .sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	padding-top: 0;
 	z-index: 500;
-}
+} */
 
 /*Background image style**/
 .hero-image {
@@ -65,12 +65,12 @@ body, html {
 
 /* headings */
 h1 {
-
+	margin: 0;
+	margin-top: 1.5em;
 	font-family: 'Abril Fatface', cursive;
 	font-weight: 300;
 	text-align: center;
 	position: absolute;
-	top: 25%;
 	right: 0;
     left: 0;
     text-shadow: 3px 3px 3px black;
@@ -132,7 +132,6 @@ h2 {
 /* Carousel style*/
 .section-1 {
 	height: 700px !important;
-	top: -75px;
 }
 
 .card-content .card-title {
@@ -176,14 +175,8 @@ h2 {
 	top: -85px !important;
 }
 
-/* About me section-2 style  */
-.about-me {
-	height: 800px;
-}
-
 /* about me image */
 #ashram {
-
 	width: 100%;
     display: block;
     margin: auto;
@@ -191,16 +184,10 @@ h2 {
 
 }
 
-/* Contact section-3 style */
-.contact {
-	height: 800px;
-}
-
 /* Social Media section-4 style */
 
 .social-media img {
 	height: 100px;
-
 }
 
 #youtube-logo {
@@ -211,7 +198,7 @@ h2 {
 	text-align: center;
 	display: block;
 	margin: auto;
-	width: 90%;
+	width: 100%;
 }
 
 footer {
@@ -310,22 +297,34 @@ footer {
     	display: block;
 	}
 	.section-1 {
-		top: -12em;
 		height: 700px !important;
 	}
 	h1 {
-		font-size: 3em;
-		top: 5%;
+		margin-top: 2em;
 	}
 	.nav-wrapper {
-		top: 40%;
+		top: 55%;
+	}
+	.carousel {
+		overflow: visible;
+	}
+	.card {
+		margin-top: 3em;
 	}
 	.hero-image {
-		height: 60%
+		height: 85%
 	}
 
 	.about-me {
 		height: 80%;
+	}
+
+	.overlay-image .text {
+		font-size: 20px;
+		top: 15%;
+	}
+	.overlay-image .hover .text {
+		font-size: 15px;
 	}
 
 	.contact {
@@ -351,6 +350,9 @@ footer {
 	}
 
 	@media screen and (max-width: 768px){
+		h1 {
+			margin-top: 2.5em;
+		}
 		.about-me {
 			height: 100%;
 		}
