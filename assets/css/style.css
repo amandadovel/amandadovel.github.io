@@ -8,10 +8,10 @@ html {
 .hero-image {
 	width: 100wh;
 	color: #fff;
+	background: -o-linear-gradient(135deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 	height: 50%;
 	background-position: center;
@@ -21,20 +21,6 @@ html {
 
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-
-	50% {
-		background-position: 100% 50%
-	}
-
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
 	}
@@ -115,16 +101,22 @@ h2 {
 	padding: 20px;
 	font-size: 24px;
 	font-family: 'PT Serif', serif;
+	-webkit-transition: all .2s ease-in-out !important;
+	-o-transition: all .2s ease-in-out !important;
 	transition: all .2s ease-in-out !important;
 }
 
 .nav-a:hover {
-	transform: scale(1.1) !important;
+	-webkit-transform: scale(1.1) !important;
+	    -ms-transform: scale(1.1) !important;
+	        transform: scale(1.1) !important;
 	cursor: pointer;
 	text-shadow: 3px 3px 3px black;
 }
 
 #nav-links {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
 	display: inline-flex;
 }
 
@@ -235,7 +227,9 @@ footer {
 	position: absolute;
 	top: 15%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	width: 80%;
 }
 
@@ -247,6 +241,8 @@ footer {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
 	transition: .5s ease;
 	cursor: pointer;
 }
@@ -258,6 +254,8 @@ footer {
 
 /********* Background and text only overlay on hover *******/
 .overlay-image .normal {
+	-webkit-transition: .5s ease;
+	-o-transition: .5s ease;
 	transition: .5s ease;
 }
 
@@ -356,6 +354,8 @@ footer {
 	}
 
 	.social-media-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -406,6 +406,8 @@ footer {
 	}
 
 	.social-media-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
