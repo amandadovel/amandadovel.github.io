@@ -172,7 +172,8 @@ h2 {
 
 .card-reveal p {
 	font-family: 'PT Serif', serif;
-    padding: 20px;
+	padding: 20px;
+	line-height: 30px;
 }
 
 .activator {
