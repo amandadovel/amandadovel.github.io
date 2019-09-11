@@ -134,6 +134,10 @@ h2 {
 	height: 700px !important;
 }
 
+.carousel {
+	overflow: inherit;
+}
+
 .card-content .card-title {
     display: block;
     line-height: 32px;
